@@ -18,6 +18,9 @@
         android:layout_margin="10dp" />
 
     <CheckBox
+        android:text="American"/>
+
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chinese"
@@ -29,14 +32,23 @@
         android:text="@string/ethiopian"/>
 
     <CheckBox
+        android:text="Indian"/>
+
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/italian"/>
 
     <CheckBox
+        android:text="Japanese"/>
+
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/korean"/>
+
+    <CheckBox
+        android:text="Mediterranean"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -54,4 +66,5 @@
         android:text="Next"
         android:layout_gravity="right"
         android:onClick="toGo"/>
+
 </GridLayout>
