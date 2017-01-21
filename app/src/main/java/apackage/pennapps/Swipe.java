@@ -15,9 +15,13 @@ public class Swipe extends AppCompatActivity {
 
     public void yes(View view) {
         Intent intent = new Intent(this, Restaurant.class);
+        String addr = "shake shack";
+        String num = "(215) 423-1707";
+        intent.putExtra("address", "shake shack");
+        intent.putExtra("num", "(215) 423-1707");
+
         //TODO: something to store the preferences
-        //TODO: store the address of the resturant to be passed to maps
-        //TODO: store phone number of resturant to call
+
         startActivity(intent);
     }
 }
