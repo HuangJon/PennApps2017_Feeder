@@ -15,10 +15,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Direction"/>
+        android:text="Direction"
+        android:onClick="getDirections"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Call"/>
+        android:text="Call"
+        android:onClick="callNumber"/>
 </LinearLayout>
