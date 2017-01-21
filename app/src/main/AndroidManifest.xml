@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="apackage.pennapps">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,7 @@
         </activity>
         <activity android:name=".Go" />
         <activity android:name=".Swipe" />
-        <activity android:name=".Restaurant"></activity>
+        <activity android:name=".Resturant"></activity>
     </application>
 
 </manifest>

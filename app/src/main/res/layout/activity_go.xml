@@ -10,11 +10,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="go!"/>
+        android:text="go!"
+        android:onClick="toSwipe"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Feeling lucky"/>
+        android:text="Feeling lucky"
+        android:onClick="toSwipe"/>
 
 </LinearLayout>

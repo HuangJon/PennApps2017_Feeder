@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="apackage.pennapps.Restaurant">
+    tools:context="apackage.pennapps.Resturant">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,10 +15,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Direction"/>
+        android:text="Direction"
+        android:onClick="getDirections"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Call"/>
+        android:text="Call"
+        android:onClick="callNumber"/>
 </LinearLayout>
