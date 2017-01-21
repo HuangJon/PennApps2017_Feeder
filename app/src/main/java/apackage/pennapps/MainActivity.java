@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goNextPage(View view) {
-        Intent intent = new Intent(this, Swipe.class);
-        //something to store the preferences
+    public void toGo(View view) {
+        Intent intent = new Intent(this, Go.class);
+        //TODO: something to store the preferences
         startActivity(intent);
     }
 

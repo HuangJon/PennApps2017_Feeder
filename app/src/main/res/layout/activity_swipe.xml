@@ -19,4 +19,11 @@
         android:layout_height="wrap_content"
         android:text="restaurant info here."/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="placeholderButton"
+        android:layout_gravity="right"
+        android:onClick="yes"/>
+
 </LinearLayout>
