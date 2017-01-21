@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_restaurant"
     android:layout_width="match_parent"
@@ -13,14 +13,20 @@
         android:text="restaurant info here"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
         android:text="Direction"
-        android:onClick="getDirections"/>
+        android:onClick="getDirections"
+        android:gravity="center_horizontal|center"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:textSize="18sp" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
         android:text="Call"
-        android:onClick="callNumber"/>
-</LinearLayout>
+        android:onClick="callNumber"
+        android:layout_gravity="center"
+        android:textSize="18sp" />
+</GridLayout>
