@@ -15,8 +15,8 @@ public class Resturant extends AppCompatActivity {
     }
 
     public void callNumber(View view) {
-        URI number = Uri.parse("tel:(860) 941-2482");
-        Intent callIntent = new Intent(Intent.ACTION_CALL, number);
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse("tel:(800)222-222"));
         startActivity(callIntent);
     }
 
