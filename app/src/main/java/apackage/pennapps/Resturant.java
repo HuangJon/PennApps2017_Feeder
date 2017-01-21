@@ -15,13 +15,15 @@ public class Resturant extends AppCompatActivity {
     }
 
     public void callNumber(View view) {
-        URI number = Uri.parse("tel:(860) 941-2482");
-        Intent callIntent = new Intent(Intent.ACTION_CALL, number);
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse("tel:(800)222-222"));
         startActivity(callIntent);
     }
 
     public void getDirections(View view) {
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Shake+Shack+Philadelphia+Pennsylvania");
+        //may want to pass in a geolocation for more accurate results?
+        Uri gmmIntentUri = Uri.parse("geo:0,0?q=shake+shake+2000+Sansom+St+Philadelphia");
+        //Uri gmmIntentUri = Uri.parse("geo:0,0?q=Shake+Shack+Philadelphia+Pennsylvania");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);

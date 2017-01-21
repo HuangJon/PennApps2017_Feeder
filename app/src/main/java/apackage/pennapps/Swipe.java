@@ -17,6 +17,7 @@ public class Swipe extends AppCompatActivity {
         Intent intent = new Intent(this, Resturant.class);
         //TODO: something to store the preferences
         //TODO: store the address of the resturant to be passed to maps
+        //TODO: store phone number of resturant to call
         startActivity(intent);
     }
 }
