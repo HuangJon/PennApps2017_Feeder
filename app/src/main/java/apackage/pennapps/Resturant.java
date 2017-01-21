@@ -19,4 +19,10 @@ public class Resturant extends AppCompatActivity {
         startActivity(callIntent);
     }
 
+    public void getDirections(View view) {
+        Uri gmmIntentUri = Uri.parse("google.navigation:q=Shake+Shack+Philadelphia+Pennsylvania");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
+    }
 }
