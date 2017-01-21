@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Resturant extends AppCompatActivity {
+public class Restaurant extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,7 @@ public class Resturant extends AppCompatActivity {
 
     public void callNumber(View view) {
         Intent callIntent = new Intent(Intent.ACTION_DIAL);
-        callIntent.setData(Uri.parse("tel:(800)222-222"));
+        callIntent.setData(Uri.parse("tel:(215) 423-1707"));
         startActivity(callIntent);
     }
 
