@@ -3,7 +3,7 @@ package apackage.pennapps;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Restaurant extends AppCompatActivity {
+public class Resturant extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
