@@ -6,9 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textViewStyle">@style/TextView</item>
-        <item name="android:checkboxStyle">@style/CheckBox</item>
-        <item name="android:buttonStyle">@style/Button</item>
+        <item name="checkboxStyle">@style/CheckBox</item>
     </style>
 
     <style name="Button" parent="Widget.AppCompat.Button">
@@ -22,7 +20,8 @@
     </style>
 
     <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:padding">10sp</item>
     </style>
 

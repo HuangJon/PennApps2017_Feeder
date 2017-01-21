@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".Go" />
         <activity android:name=".Swipe" />
-        <activity android:name=".Resturant"></activity>
+        <activity android:name=".Restaurant"></activity>
     </application>
 
 </manifest>
