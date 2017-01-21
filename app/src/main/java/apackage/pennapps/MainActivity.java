@@ -12,13 +12,14 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private GestureDetectorCompat mDetector;
+    private MyGestureListener gestureListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mDetector = new GestureDetectorCompat(this, new MyGestureListener());
-
+        gestureListener = new MyGestureListener();
         Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isfirstrun", true);
         if (isFirstRun) {
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isfirstrun", false).commit();
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
 
     public void toGo(View view) {
         Intent intent = new Intent(this, Go.class);
