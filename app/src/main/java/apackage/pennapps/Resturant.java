@@ -21,7 +21,9 @@ public class Resturant extends AppCompatActivity {
     }
 
     public void getDirections(View view) {
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Shake+Shack+Philadelphia+Pennsylvania");
+        //may want to pass in a geolocation for more accurate results?
+        Uri gmmIntentUri = Uri.parse("geo:0,0?q=shake+shake+2000+Sansom+St+Philadelphia");
+        //Uri gmmIntentUri = Uri.parse("geo:0,0?q=Shake+Shack+Philadelphia+Pennsylvania");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
