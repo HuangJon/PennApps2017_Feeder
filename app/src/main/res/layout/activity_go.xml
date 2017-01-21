@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_go"
@@ -8,15 +8,21 @@
     android:orientation="vertical">
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="go!"
-        android:onClick="toSwipe"/>
+        android:onClick="toSwipe"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:layout_marginTop="250dp" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Feeling lucky"
-        android:onClick="toSwipe"/>
+        android:onClick="toSwipe"
+        android:layout_marginTop="-100dp" />
 
-</LinearLayout>
+</GridLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -11,12 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/survey"
-        android:typeface="monospace"/>
+        android:typeface="monospace"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:layout_margin="10dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/chinese"/>
+        android:text="@string/chinese"
+        android:textSize="18sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -49,4 +54,4 @@
         android:text="Next"
         android:layout_gravity="right"
         android:onClick="toGo"/>
-</LinearLayout>
+</GridLayout>
