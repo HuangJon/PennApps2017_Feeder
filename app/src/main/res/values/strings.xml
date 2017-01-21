@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PennApps</string>
+    <string name="survey">Check the food that you like: (to create your food preferences, you\'ll
+        only need to do this once!)</string>
+    <string name="italian">Italian</string>
+    <string name="chinese">Chinese</string>
+    <string name="korean">Korean</string>
+    <string name="mexican">Mexican</string>
+    <string name="thai">Thai</string>
+    <string name="ethiopian">Ethiopian</string>
+
+    <string name="title_activity_go">Go</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
