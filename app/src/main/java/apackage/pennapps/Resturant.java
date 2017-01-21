@@ -2,16 +2,24 @@ package apackage.pennapps;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 
 public class Resturant extends AppCompatActivity {
+
+    private GestureDetectorCompat mDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant);
+//        View view = this.getWindow().getDecorView().getRootView();
+//        LinearLayout swipeview = (LinearLayout) findViewById(R.id.activity_swipe);
+
+        mDetector = new GestureDetectorCompat(this, new MyGestureListener());
     }
 
     public void callNumber(View view) {
@@ -28,4 +36,11 @@ public class Resturant extends AppCompatActivity {
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        this.mDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
 }
